@@ -1,0 +1,104 @@
+/*Colors
+
+*/
+
+body {
+    font-family: "Roboto Slab", serif;
+    line-height: 1.25;
+    margin: 10px;
+    background: url("../images/background.jpg");
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Raleway;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-family: "Roboto Slab"
+}
+
+nav ul{
+    background-color: #038C4C;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    text-align: center;
+  }
+
+li a{
+    color: #FFFFFF;
+    padding: 10px;
+    margin: 10px;
+}
+
+li a:hover {
+    background-color: #193C40;
+}
+
+nav .active {
+    background-color: #A62B1F;
+    text-decoration: underline;
+}
+
+p {
+    padding-top: 10px;
+}
+
+img:hover {
+    padding: 10px;
+    box-shadow: 5px 10px #0D0D0D;
+}
+
+/**Should actually style imgs by their parent container**/
+img{
+    width: 200px;
+    padding: 8px;
+    margin: 10px;
+    border: 1px double #012611;
+}
+
+@media screen and (min-width: 700px){
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav {
+        align-self: center;
+    }
+
+    .nav_links {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
