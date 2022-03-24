@@ -13,6 +13,15 @@
 	<link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CEGYBY528R"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  	gtag('config', 'G-CEGYBY528R');
+	</script>
 	<title>Interaction Design</title>
 </head>
 
@@ -23,7 +32,7 @@
 	<header>
 		<nav>
             <ul>
-				<li><a class="active" href = "index.html">Home</a></li>
+				<li><a href = "index.html">Home</a></li>
 				<li><a href = "contextualinquiry.html">Contextual Inquiry</a></li>
 				<li><a href = "cutgroup.html">CUTgroup</a></li>
 				<li><a class="active" href = "interactiondesign.html">Interaction Design</a></li>
@@ -34,7 +43,7 @@
 	</header>
 
 	<main id=main>
-        <div>
+        <div class="flex">
             <img src="images/gojobsgo.JPG" alt="Picture of the app logo" width="200">
             <p>
                 In addition to user research skills, I have also gained several competencies surrounding design,
@@ -50,43 +59,43 @@
             <img src="images/qoc_screenshot.JPG" alt="QOC analysis, early stage of app research" width="200">
         </div>
 
-        <div>
+        <div class="flex">
             <p>The app is meant to help students find mini-internships and be able to track their projects and tasks,
                 as well as provide a communication platform with their supervisor, all on the same platform.
             </p>
         </div>
 
-        <div>
+        <div class="flex">
             <h2>Check Out the App Below</h2>
             <img src="images/home.JPG" alt="QOC analysis, early stage of app research" width="200">
         </div>
 
-        <div>
+        <div class="flex">
             <p>First, search for mini-internships.</p>
             <img src="images/search.JPG" alt="the app search function" width="200">
         </div>
 
-        <div>
+        <div class="flex">
             <p>If you find an opportunity that you like, then apply for it.</p>
             <img src="images/opportunity.JPG" alt="example of an internship opportunity" width="200">
         </div>
 
-        <div>
+        <div class="flex">
             <p>Chat with the employers on the app to make a good impression.</p>
             <img src="images/chat.JPG" alt="use the chat function" width="200">
         </div>
 
-        <div>
+        <div class="flex">
             <p>After you get an offer, negotiate with your supervisor to get the best deal.</p>
             <img src="images/negotiate.JPG" alt="Chat feature with negotiation example" width="200">
         </div>
 
-        <div>
+        <div class="flex">
             <p>Use the project tracker to send your employer regular updates on your progress.</p>
             <img src="images/task.JPG" alt="example of the project tracker" width="200">
         </div>
 
-        <div>
+        <div class="flex">
             <p>You can easily creat subtasks and mark them as complete as you go.</p>
             <img src="images/task2.JPG" alt="marking subtasks as complete" width="200">
         </div>
@@ -104,7 +113,8 @@
 
     <footer>
         <hr>
-       <p>Amy Engineer &copy; 2022</p>
+        <i class="fa-solid fa-envelope"></i> <p>amyeng@umich.edu</p>
+		<p>&copy; Amy Engineer 2022</p>
     </footer>
 
 </body>

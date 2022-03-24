@@ -19,6 +19,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,15 +28,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 4.5em;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 3.5em;
 }
 
 h3 {
+    font-size: 3em;
+}
+
+h4 {
     font-size: 2em;
+}
+
+h5 {
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+h6 {
+    font-size: 1em;
+    text-decoration: underline;
 }
 
 p {
@@ -43,6 +59,7 @@ p {
 
 nav ul{
     background-color: #038C4C;
+    text-decoration: none;
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 10px;
@@ -76,7 +93,7 @@ p {
 
 img:hover {
     padding: 10px;
-    box-shadow: 5px 10px #0D0D0D;
+    box-shadow: 5px 10px #000000;
 }
 
 /**Should actually style imgs by their parent container**/
@@ -84,12 +101,67 @@ img{
     width: 200px;
     padding: 8px;
     margin: 10px;
-    border: 1px double #012611;
+    border: 1px double #000000;
 }
 
+/*Animation of the first img on the index.html page */
+
+#headshot {
+    animation-name: logo_animate;
+    animation-duration: 5s;
+}
+
+@keyframes logo_animate {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/*Grid and Flex*/
+.cutgroup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+}
+
+.flex {
+    display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 10px;
+        justify-content: space-between;
+}
+
+/*form on the contact page */
+input {
+    display: block;
+}
+
+/*why won't this work??*/
+input [type="submit"] {
+    background-color: #38803c;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+footer {
+    display: inline-block;
+}
+
+/*Why doesn't this work???*/
 @media screen and (min-width: 700px){
     header {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
 
@@ -98,7 +170,9 @@ img{
     }
 
     .nav_links {
-        flex-direction: row;
+        display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
+
 }

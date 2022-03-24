@@ -13,6 +13,15 @@
 	<link rel="stylesheet" href="css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CEGYBY528R"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  	gtag('config', 'G-CEGYBY528R');
+	</script>
 	<title>Contact Amy</title>
 </head>
 
@@ -36,16 +45,37 @@
 	<!-- Every page should have a main tag for accessibility -->
 	<main id=main>
         <h2>If you would like to connect, please fill out the form below, and I will get back to you.</h2>
-        <p>Name</p>
-        <p>Email</p>
-        <p>Phone Number</p>
-        <p>Message</p>
-        <h4>Submit!</h4>
+
+		<div class="form">
+		<form action="https://formspree.io/f/mvolbpok" method="POST">
+			<fieldset>
+			  <legend><h3>Form</h3></legend>
+			  <label for="name_id">Your Name</label>
+			  <input type="text" name = "user_name" id = "name_id" placeholder="Enter Your Name">
+
+			  <label for="email_id">Your Email</label>
+			  <input type="email" placeholder = "me@me.com" name = "user_email" id = "email_id">
+
+			  <label>Your Phone Number</label>
+			  <input type="tel" name = "user_phone" id = "phone_id">
+			  <div><span>Format: 123-456-7890</span></div>
+
+			  <label for = "message_id">Leave A Message</label>
+			  <textarea name = "message" id = "message_id"></textarea>
+
+			  <input type="checkbox" name = "Subscribe" id = "subscribe">
+			  <label for ="subscribe">Remember me</label>
+
+			  <input type="submit" value ="Click Me!">
+			</fieldset>
+		</form>
+		</div>
     </main>
 
 	<footer>
 		<hr>
-		<p>Amy Engineer &copy; 2022</p>
+		<i class="fa-solid fa-envelope"></i> <p>amyeng@umich.edu</p>
+		<p>&copy; Amy Engineer 2022</p>
 	</footer>
 
 </body>
