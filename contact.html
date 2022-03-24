@@ -14,6 +14,8 @@
 	<!--Google Fonts-->
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet'>
+	<!-- Font Awesome kit set up -->
+	<script src="https://kit.fontawesome.com/e877dce10b.js" crossorigin="anonymous"></script>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CEGYBY528R"></script>
 	<script>
@@ -32,7 +34,7 @@
 	<header>
 		<nav>
 			<ul>
-				<li><a href = "index.html" >Home</a></li>
+				<li><a href = "index.html">Home</a></li>
 				<li><a href = "contextualinquiry.html">Contextual Inquiry</a></li>
 				<li><a href = "cutgroup.html">CUTgroup</a></li>
 				<li><a href = "interactiondesign.html">Interaction Design</a></li>
@@ -51,23 +53,28 @@
 		<form action="https://formspree.io/f/mvolbpok" method="POST">
 			<fieldset>
 			  <legend><h3>Form</h3></legend>
+
 			  <label for="name_id">Your Name</label>
+			  <i class="fa-solid fa-address-book"></i>
 			  <input type="text" name = "user_name" id = "name_id" placeholder="Enter Your Name">
 
 			  <label for="email_id">Your Email</label>
+			  <i class="fa-solid fa-envelope"></i>
 			  <input type="email" placeholder = "me@me.com" name = "user_email" id = "email_id">
 
-			  <label>Your Phone Number</label>
+			  <label for="phone_id">Your Phone Number</label>
+			  <i class="fa-solid fa-phone"></i>
 			  <input type="tel" name = "user_phone" id = "phone_id">
 			  <div><span>Format: 123-456-7890</span></div>
 
-			  <label for = "message_id">Leave A Message</label>
+			  <label for= "message_id">Leave A Message</label>
+			  <i class="fa-solid fa-pen-clip"></i>
 			  <textarea name = "message" id = "message_id"></textarea>
 
 			  <input type="checkbox" name = "Subscribe" id = "subscribe">
 			  <label for ="subscribe">Remember me</label>
 
-			  <input type="submit" value ="Click Me!">
+			  <input type="submit" value ="Send Now!">
 			</fieldset>
 		</form>
 		</div>
@@ -75,7 +82,7 @@
 
 	<footer>
 		<hr>
-		<i class="fa-solid fa-envelope"></i> <p>amyeng@umich.edu</p>
+		<a href = "https://www.linkedin.com/in/amy-engineer/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
 		<p>&copy; Amy Engineer 2022</p>
 	</footer>
 
