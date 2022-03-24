@@ -28,33 +28,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 4.5em;
+    font-size: 6em;
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 3.5em;
+    font-size: 5em;
 }
 
 h3 {
-    font-size: 3em;
+    font-size: 4em;
 }
 
 h4 {
-    font-size: 2em;
+    font-size: 3em;
 }
 
 h5 {
-    font-size: 1.5em;
+    font-size: 2em;
     text-decoration: underline;
 }
 
 h6 {
-    font-size: 1em;
+    font-size: 1.5em;
     text-decoration: underline;
 }
 
 p {
-    font-family: "Roboto Slab"
+    font-family: "Roboto Slab";
+    padding-bottom: 10px;
 }
 
 nav ul{
@@ -108,7 +110,7 @@ img{
 
 #headshot {
     animation-name: logo_animate;
-    animation-duration: 5s;
+    animation-duration: 3s;
 }
 
 @keyframes logo_animate {
@@ -155,6 +157,13 @@ input [type="submit"] {
 
 footer {
     display: inline-block;
+}
+
+/*Reduced Motion*/
+@media screen and (prefers-reduced-motion: reduce){
+    .logo {
+        animation: none;
+    }
 }
 
 /*Why doesn't this work???*/
