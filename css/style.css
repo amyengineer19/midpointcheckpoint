@@ -22,40 +22,10 @@ header {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: Raleway;
-}
-
-h1 {
-    font-size: 6em;
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 5em;
-}
-
-h3 {
-    font-size: 4em;
-}
-
-h4 {
-    font-size: 3em;
-}
-
-h5 {
-    font-size: 2em;
-    text-decoration: underline;
-}
-
-h6 {
-    font-size: 1.5em;
-    text-decoration: underline;
-}
-
-p {
-    font-family: "Roboto Slab";
-    padding-bottom: 10px;
+/*Skip to main*/
+a.skip{
+    position: absolute;
+    left: -500px;
 }
 
 nav ul{
@@ -75,12 +45,14 @@ li {
 
 li a{
     color: #FFFFFF;
-    padding: 10px;
-    margin: 10px;
+    text-decoration: none;
+    padding-bottom: 20px;
+    margin: 20px;
 }
 
 li a:hover {
     background-color: #193C40;
+    text-decoration: dashed;
 }
 
 nav .active {
@@ -89,9 +61,20 @@ nav .active {
     font-weight: bold;
 }
 
-p {
-    padding-top: 10px;
-}
+h1, h2, h3, h4, h5, h6 {font-family: Raleway;}
+h1 {font-size: 4em;
+    font-weight: bold;}
+h2 {font-size: 3.5em;
+    font-weight: bold;}
+h3 {font-size: 3em;}
+h4 {font-size: 2.5em;}
+h5 {font-size: 2em;
+    text-decoration: underline;}
+h6 {font-size: 1.5em;
+    text-decoration: underline;}
+p {font-family: "Roboto Slab";
+   padding-top: 10px;
+   padding-bottom: 10px;}
 
 img:hover {
     padding: 10px;
@@ -123,8 +106,15 @@ img{
     }
 }
 
+/*Reduced Motion*/
+@media screen and (prefers-reduced-motion: reduce){
+    #headshot {
+        animation: none;
+    }
+}
+
 /*Grid and Flex*/
-.cutgroup {
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 10px;
@@ -164,15 +154,9 @@ footer {
     display: inline-block;
 }
 
-/*Reduced Motion*/
-@media screen and (prefers-reduced-motion: reduce){
-    .logo {
-        animation: none;
-    }
-}
 
 /*Why doesn't this work???*/
-@media screen and (max-width: 800px){
+@media screen and (min-width: 800px){
     header {
         display: flex;
         flex-direction: column;
@@ -189,9 +173,8 @@ footer {
         justify-content: space-between;
     }
 
-    li a{
-        padding-bottom: 20px;
-        margin: 20px;
+    li a {
+    padding: 10px;
     }
 
 }
